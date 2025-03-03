@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dunyo</title>
+</head>
+<body>
+<h1>Fan qo'shish</h1>
+<form action="{% url 'add_fan' %} " method="post">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+    <button type="submit">Qo'shish</button>
+</form>
+
+</body>
+</html>
